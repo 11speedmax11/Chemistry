@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chemistry</title>
+  <link rel="stylesheet" href="styleAdm.css">
+</head>
+
+<body>
+
+  <div class="overlay">
+    <form>
+      <label>Имя: </label>
+      <input type="text" name="name1">
+      <label>Пароль: </label>
+      <input type="text" name="name2">
+      <button type="submit">Добавить</button>
+    </form>
+  </div>
+
+  <div class="tab-container">
+    <div class="tab-headers">
+      <div class="tab-header active" data-tab="tab1">Пользователи</div>
+      <div class="tab-header" data-tab="tab2">Материалы</div>
+      <div class="tab-header" data-tab="tab3">Параметры</div>
+      <button class="exit">Выйти</button>
+    </div>
+    <div class="tab-content">
+      <div class="tab active" data-tab="tab1">
+        <div class="container">
+          <div class="buttons">
+            <button class="addUser">Добавить пользователя</button>
+            <button>Изменить пароль</button>
+            <button>Удалить пользователя</button>
+          </div>
+          <table>
+            <tr>
+              <th>Заголовок 1</th>
+              <th>Заголовок 2</th>
+              <th>Заголовок 3</th>
+            </tr>
+            <tr>
+              <td>Ячейка 1</td>
+              <td>Ячейка 2</td>
+              <td>Ячейка 3</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="tab" data-tab="tab2">
+        <div class="container">
+          <div class="buttons">
+            <button>Добавить материал</button>
+            <button>Изменить материал</button>
+            <button>Удалить материал</button>
+          </div>
+          <table>
+            <tr>
+              <th>Заголовок 1</th>
+              <th>Заголовок 2</th>
+              <th>Заголовок 3</th>
+            </tr>
+            <tr>
+              <td>Ячейка 1</td>
+              <td>Ячейка 2</td>
+              <td>Ячейка 3</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="tab" data-tab="tab3">
+        <div class="container">
+          <div class="buttons">
+            <button>Добавить параметр</button>
+            <button>Изменить параметр</button>
+            <button>Удалить параметр</button>
+          </div>
+          <table>
+            <tr>
+              <th>Заголовок 1</th>
+              <th>Заголовок 2</th>
+              <th>Заголовок 3</th>
+            </tr>
+            <tr>
+              <td>Ячейка 1</td>
+              <td>Ячейка 2</td>
+              <td>Ячейка 3</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./scriptAdm.js"></script>
+</body>
+
+</html>

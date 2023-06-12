@@ -160,6 +160,9 @@ class Calc {
   }
 }
 
+
+let result = document.querySelectorAll('.res div');
+
 let _zCoord;
 let _temperature;
 let _viscosity;
@@ -312,13 +315,23 @@ function CanvasWork(Xarr, Yarr, canvas, yMax) {
 
 }
 
-var button = document.querySelector(".culc");
-button.addEventListener("click", function () {
+document.querySelector('.overlay').style.display = 'flex';
+
+let buttonCulc = document.querySelector(".culc");
+buttonCulc.addEventListener("click", function () {
   if (CalculateLists()) {
     TableWork();
     var canvas = document.querySelector(".one");
     CanvasWork(_zCoord, _temperature, canvas, 300);
     canvas = document.querySelector(".two");
     CanvasWork(_zCoord, _viscosity, canvas, 1200);
+    result[0].innerHTML = `Производительность: ${_calc.Efficiency()} кг/ч`;
+    result[1].innerHTML = `Температура: ${parseFloat(_temperature[_temperature.length - 1]).toFixed(2)} °С`;
+    result[2].innerHTML = `Вязкость: ${parseFloat(_viscosity[_viscosity.length - 1]).toFixed(2)} Па*с`;
   }
+});
+
+let buttonExit = document.querySelector(".exit");
+buttonExit.addEventListener("click", function () {
+  window.location.href = "index.html";
 });
