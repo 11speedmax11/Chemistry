@@ -18,3 +18,13 @@ var buttonForm1 = document.querySelector(".addUser");
 buttonForm1.addEventListener("click", function () {
   document.querySelector('.overlay').style.display = 'flex';
 });
+
+var buttonForm2 = document.querySelector(".changeUser");
+buttonForm2.addEventListener("click", function () {
+  document.querySelector('.overlayUser').style.display = 'flex';
+});
+
+var buttonForm3 = document.querySelector(".DelUser");
+buttonForm3.addEventListener("click", function () {
+  document.querySelector('.overlayDel').style.display = 'flex';
+});

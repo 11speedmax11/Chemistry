@@ -315,8 +315,6 @@ function CanvasWork(Xarr, Yarr, canvas, yMax) {
 
 }
 
-document.querySelector('.overlay').style.display = 'flex';
-
 let buttonCulc = document.querySelector(".culc");
 buttonCulc.addEventListener("click", function () {
   if (CalculateLists()) {
