@@ -75,74 +75,12 @@ th {
   width: 50%;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* полупрозрачный фон */
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
-
-/* Стили для формы внутри всплывающего окна */
-.overlay form {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 250px;
-}
-
-/* Стили для полей ввода */
-.overlay input {
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  width: 91%;
-}
-
 form label {
   width: 100%;
 }
 
-
-.overlayUser {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* полупрозрачный фон */
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
-
-/* Стили для формы внутри всплывающего окна */
-.overlayUser form {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 250px;
-}
-
 /* Стили для полей ввода */
-.overlayUser input {
+input {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -158,7 +96,11 @@ form select {
   width: 100%;
 }
 
-.overlayDel {
+.par th {
+  width: 33.3%;
+}
+
+.ParDel, .ParChange, .overlayDel, .overlayUser, .overlay, .ParAdd, .MatDel, .MatChange {
   position: fixed;
   top: 0;
   left: 0;
@@ -173,7 +115,7 @@ form select {
 }
 
 /* Стили для формы внутри всплывающего окна */
-.overlayDel form {
+.ParDel form, .ParChange form, .overlayDel form, .overlayUser form, .overlay form, .ParAdd form, .MatDel form, .MatChange form {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -182,8 +124,4 @@ form select {
   flex-direction: column;
   align-items: center;
   width: 250px;
-}
-
-.par th {
-  width: 33.3%;
 }
