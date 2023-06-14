@@ -28,3 +28,28 @@ var buttonForm3 = document.querySelector(".DelUser");
 buttonForm3.addEventListener("click", function () {
   document.querySelector('.overlayDel').style.display = 'flex';
 });
+
+var buttonForm4 = document.querySelector(".parDelBut");
+buttonForm4.addEventListener("click", function () {
+  document.querySelector('.ParDel').style.display = 'flex';
+});
+
+var buttonForm5 = document.querySelector(".parChangeBut");
+buttonForm5.addEventListener("click", function () {
+  document.querySelector('.ParChange').style.display = 'flex';
+});
+
+var buttonForm6 = document.querySelector(".parAddBut");
+buttonForm6.addEventListener("click", function () {
+  document.querySelector('.ParAdd').style.display = 'flex';
+});
+
+var buttonForm7 = document.querySelector(".DelMat");
+buttonForm7.addEventListener("click", function () {
+  document.querySelector('.MatDel').style.display = 'flex';
+});
+
+var buttonForm8 = document.querySelector(".ChangeMat");
+buttonForm8.addEventListener("click", function () {
+  document.querySelector('.MatChange').style.display = 'flex';
+});
