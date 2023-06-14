@@ -45,6 +45,67 @@
     </form>
   </div>
 
+  <div class="ParChange">
+    <form>
+      <label>Параметр: </label>
+      <select class="ComboBoxUserDel">
+        <option>Пункт 1</option>
+        <option>Пункт 2</option>
+      </select>
+      <label>Символ: </label>
+      <input type="text" name="Parname1">
+      <label>Единицы измерения: </label>
+      <input type="text" name="Parname2">
+      <button type="submit">Изменить</button>
+    </form>
+  </div>
+
+  <div class="ParAdd">
+    <form>
+      <label>Параметр: </label>
+      <input type="text" name="Parname3">
+      <label>Символ: </label>
+      <input type="text" name="Parname1">
+      <label>Единицы измерения: </label>
+      <input type="text" name="Parname2">
+      <button type="submit">Добавить</button>
+    </form>
+  </div>
+
+  <div class="ParDel">
+    <form>
+      <label>Параметр: </label>
+      <select class="ComboBoxUserDel">
+        <option>Пункт 1</option>
+        <option>Пункт 2</option>
+      </select>
+      <button type="submit">Удалить</button>
+    </form>
+  </div>
+
+  <div class="MatDel">
+    <form>
+      <label>материал: </label>
+      <select class="ComboBoxUserDel">
+        <option>Пункт 1</option>
+        <option>Пункт 2</option>
+      </select>
+      <button type="submit">Удалить</button>
+    </form>
+  </div>
+
+  <div class="MatChange">
+    <form>
+      <label>материал: </label>
+      <select class="ComboBoxUserDel">
+        <option>Пункт 1</option>
+        <option>Пункт 2</option>
+      </select>
+      <button>Добавить параметр</button>
+      <button type="submit">Изменить</button>
+    </form>
+  </div>
+
   <div class="tab-container">
     <div class="tab-headers">
       <div class="tab-header active" data-tab="tab1">Пользователи</div>
@@ -75,9 +136,9 @@
       <div class="tab" data-tab="tab2">
         <div class="container">
           <div class="buttons">
-            <button>Добавить материал</button>
-            <button>Изменить материал</button>
-            <button>Удалить материал</button>
+            <button >Добавить материал</button>
+            <button class="ChangeMat">Изменить материал</button>
+            <button class="DelMat">Удалить материал</button>
           </div>
           <table>
             <tr>
@@ -94,9 +155,9 @@
       <div class="tab par" data-tab="tab3">
         <div class="container">
           <div class="buttons">
-            <button>Добавить параметр</button>
-            <button>Изменить параметр</button>
-            <button>Удалить параметр</button>
+            <button class="parAddBut">Добавить параметр</button>
+            <button class="parChangeBut">Изменить параметр</button>
+            <button class="parDelBut">Удалить параметр</button>
           </div>
           <table>
             <tr>
